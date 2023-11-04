@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/415.8b9e960e.chunk.js","mappings":"2JAIA,UAJa,WACX,OAAOA,EAAAA,EAAAA,KAAA,MAAAC,SAAI,qCACb,C","sources":["pages/Home.jsx"],"sourcesContent":["const Home = () => {\n  return <h3>Welcome to our Phonebook Web App!</h3>;\n};\n\nexport default Home;\n"],"names":["_jsx","children"],"sourceRoot":""}
