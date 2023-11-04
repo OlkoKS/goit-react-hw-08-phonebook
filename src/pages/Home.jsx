@@ -1,5 +1,5 @@
-const Homepage = () => {
-  return <title>Phonebook start page</title>;
+const Home = () => {
+  return <h3>Welcome to our Phonebook Web App!</h3>;
 };
 
-export default Homepage;
+export default Home;

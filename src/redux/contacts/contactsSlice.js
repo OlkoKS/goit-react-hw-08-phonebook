@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { addContact, deleteContact, fetchContacts } from './operations';
-import { handleFulfilled, handlePending, handleRejected } from './helpers';
+import { handleFulfilled, handlePending, handleRejected } from '../helpers';
 
 const initialState = {
   items: [],
@@ -13,7 +13,6 @@ const contactsSlice = createSlice({
   initialState,
   extraReducers: builder => {
     builder
-
       .addCase(fetchContacts.fulfilled, (state, { payload }) => {
         state.items = payload;
       })
