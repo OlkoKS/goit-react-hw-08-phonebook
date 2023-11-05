@@ -30,25 +30,22 @@ export const App = () => {
         <Route
           path="/register"
           element={
-            <PublicRoute>
-              <RegistrationPage />
-            </PublicRoute>
+            <PublicRoute
+              redirectTo="/contacts"
+              component={<RegistrationPage />}
+            />
           }
         ></Route>
         <Route
           path="/login"
           element={
-            <PublicRoute>
-              <LoginPage />
-            </PublicRoute>
+            <PublicRoute redirectTo="/contacts" component={<LoginPage />} />
           }
         ></Route>
         <Route
           path="/contacts"
           element={
-            <PrivateRoute>
-              <ContactsPage />
-            </PrivateRoute>
+            <PrivateRoute redirectTo="/login" component={<ContactsPage />} />
           }
         ></Route>
       </Route>
