@@ -5,7 +5,6 @@ export const handlePending = state => {
 export const handleRejected = (state, { payload }) => {
   state.isLoading = false;
   state.error = payload;
-  return alert(payload);
 };
 
 export const handleFulfilled = state => {

@@ -1,13 +1,13 @@
 import { styled } from 'styled-components';
 
-export const UserMenuContainer = styled.div`
+const UserMenuContainer = styled.div`
   margin-left: auto;
   display: flex;
   gap: 10px;
   align-items: center;
 `;
 
-export const LogOutBtn = styled.button`
+const LogOutBtn = styled.button`
   width: 100px;
   height: 30px;
   margin-left: 10px;
@@ -24,3 +24,5 @@ export const LogOutBtn = styled.button`
     cursor: pointer;
   }
 `;
+
+export { UserMenuContainer, LogOutBtn };

@@ -1,7 +1,7 @@
 import { styled } from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
-export const RegFormContainer = styled.div`
+const RegFormContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -12,7 +12,7 @@ export const RegFormContainer = styled.div`
   }
 `;
 
-export const RegFormStyled = styled.form`
+const RegFormStyled = styled.form`
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -21,12 +21,14 @@ export const RegFormStyled = styled.form`
   align-items: center;
 `;
 
-export const RegFormLabel = styled.label`
+const RegFormLabel = styled.label`
   display: flex;
   flex-direction: column;
 `;
 
-export const StyledNavLink = styled(NavLink)`
+const StyledNavLink = styled(NavLink)`
   color: #1f37d0;
   text-underline-offset: 5px;
 `;
+
+export { RegFormContainer, RegFormStyled, RegFormLabel, StyledNavLink };
